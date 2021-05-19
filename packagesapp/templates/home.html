@@ -1,0 +1,103 @@
+{% load static %}
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AllRoadsLeadsToGoa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/elastislide.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"  />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+    <!-- scripts -->
+    <script type="text/javascript" src="{% static 'js/modernizr.custom.17475.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.multipurpose_tabcontent.js' %}"></script>
+    
+</head>
+
+<body>
+    <div id="banner-home" style="width:100%; float:left; background-repeat:no-repeat; background-position:center, height:95vh; clip-path: polygon(100% 0, 100% 70%, 79% 87%, 38% 85%, 0 100%, 0 0);">
+        <img src="{% static './img/bg.jpg' %}" alt="banner homeimage" />
+        <span class="mainFirst2">"No matters what your dream destination are,</span>
+        <span class="mainSecond2">Goa will always make its space, every year"</span>
+       </div>
+       
+       <div id="deepak-new-body">
+       
+       <div id="index2-about-top">
+       <h1>All Roads Leads To Goa</h1>
+       <p>Goa, party hub in India. Goa- name is sufficient to excite anyone and would bring smile on the face. Golden sand, beautiful beach, amazing evening with charming sunset, lush green landscape, exotic night life, long drive in scooty, cheap booze, sea food and Goa cuisine, casino - collectively describe Goa .
+       </p>
+       <p>Anytime or everytime you visit Goa - land of beaches, your emotion will become stronger and you feel connected to this place. So connected, whenever you hear the phrase "Let's Go Goa", an agreeable smile says it all and inner soul and mind get fill with unmatched pleasure and excitement.
+       </p>
+       <p>Beautiful and captivating stories & quotes on Goa, always makes you or will motivate you to visit this place again & again.
+       </p>
+       <p>To unwrap the same, we organizes trip to Goa during the peak time. We have grown rapidly with our trips and have received loads of love from the young blood throughout the past trips from all over the nation.
+       </p>
+       </div>
+       
+       <div id="index2-img-main">
+        <!-- <img src="{% static './img/bg2.jpg' %}" /> -->
+       <div id="index2-img-main-inner">
+       <h1>Our Goa Group Trip</h1>
+       <div class="index2-img-main-inner-col">
+       <div class="index2-img-main-inner-img"><img src="{% static 'img/1.jpg' %}" /></div>
+       <div class="index2-img-main-inner-details">
+       <strong>Goa Trip For Youth</strong><br />
+       For Youth (18-30 yrs)<br />
+       Duration: 4 Night/5 days<br />
+       <a href="#">View Detail</a>
+       </div>
+       </div>
+       <div class="index2-img-main-inner-col deepak-new-pad"><img src="{% static 'img/2.jpg' %}" />
+       <div class="index2-img-main-inner-details">
+       <strong>Goa Trip For Family</strong><br />
+       Family & Couple only<br />
+       Duration: 4 Night/5 days<br />
+       <a href="#">View Detail</a>
+       </div>
+       </div>
+       <div class="index2-img-main-inner-col"><img src="{% static 'img/3.jpg' %}" />
+       <div class="index2-img-main-inner-details">
+       <strong>Goa Luxury Trip</strong><br />
+       Duration: 4 Night/5 days<br />
+       <a href="#">View Detail</a><br /><br />
+       </div>
+       </div>
+       </div>
+       </div>
+       
+       <div id="index2-about-top">
+       <div class="why-choose-left">
+       <h2>Why Us..?</h2>
+       <p>✔ Enjoy the Group travel to Goa</p>
+       <p>✔ Make travel easy.</p>
+       <p>✔ Save Money</p>
+       <p>✔ Knowledge of best local spot</p>
+       <p>✔ Keep you Safe</p>
+       <p>✔ Experience of Goa vacation in original style</p>
+       <p>✔ Handle Eveything for you</p>
+       </div>
+       <div class="why-choose-right">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/L7RGxfOvKok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+       <div class="customized-trip"><a href="#">customized trip</a></div>
+       <div class="join-community"><a href="#">join community</a></div>
+       </div>       
+       </div>
+    {% include 'footer.html' %}
+    <script type="text/javascript" src="{% static 'js/jquery.elastislide.js' %}"></script>
+    <script type="text/javascript">
+			
+        $( '#carousel' ).elastislide();
+        
+    </script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+
+</body>
+</html>

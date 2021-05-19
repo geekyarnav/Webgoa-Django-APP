@@ -1,0 +1,446 @@
+{% load static %}
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Holi Beach Party in Goa- Lifelong Memorable experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- CSS -->
+<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato&display=swap'/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}"  />
+<link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/elastislide.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}" />
+<!-- SCRIPTS -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.multipurpose_tabcontent.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.elastislide.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquerypp.custom.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/modernizr.custom.17475.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".first_tab").champ();
+
+            $(".accordion_example").champ({
+                plugin_type: "accordion",
+                side: "left",
+                active_tab: "3",
+                controllers: "true"
+            });
+
+            $(".second_tab").champ({
+                plugin_type: "tab",
+                side: "right",
+                active_tab: "1",
+                controllers: "false"
+            });
+
+            $(".third_tab").champ({
+                plugin_type: "tab",
+                side: "",
+                active_tab: "4",
+                controllers: "true",
+                ajax: "true",
+                show_ajax_content_in_tab: "4",
+                content_path: "html.txt"
+            });
+            $(".multipleTab").champ({
+                //plugin_type :  "accordion",
+                multiple_tabs: "true"
+            });
+
+        });
+		
+    </script>
+</head>
+<body>
+<div id="container">
+<div id="top-header">
+  <div id="banner-main" style="width:100%; float:left;background-repeat:no-repeat; background-position:center, height:95vh; clip-path: polygon(100% 0, 100% 70%, 79% 87%, 38% 85%, 0 100%, 0 0);">
+  <img src="{% static './img/events/holi/special-holi-package-goa.png' %}" alt="banner image" />
+<span class="mainFirst">Holi</span>
+<span class="mainSecond">Festival of color at beach</span>
+</div>
+<div class="body-main-div">
+<div id="special-main-div">
+<h1>Special Holi Trip to Goa</h1>
+<p>Holi is the festival of color. Its is widely celebrated festival in the month of March in India. Holi is celebrated across the nation and each destination have an epic style or version of celebration. Holi celebration range from old-age tradition, unique custom to modern parties with music & dance, bhang and plenty of colors.
+</p>
+<p>Holi, festival of color is celebrated in Goa with great joy. People who travel to Goa during Holi can feast their eyes on the rain of colors. Color of festival is enjoyed by the local and tourist alike. People from all communities Hindus, Christians and local & foreigner are invited to Holi parties that are being organised outdoor premises or even at the beach side resorts to play Holi with music & dance and plenty of color.
+</p>
+<p>AllRoadsLeadToGoa, is organizing special trip to Goa during Holi with wild celebration & party in Goan style. Let's celebrate holi away from home this year and experience festival of color in different style of fun. We make sure that you cherish every moment of the trip spent at party capital of India, Goa.
+</p>
+</div>
+<div class="main-div-trip-from">
+    {% for data in object %}
+<div class="main-div-trip-ins">
+<h1>Trip Start From</h1>
+<p>{{data.start_from}}</p>
+</div>
+{% endfor %}
+{% for data in object %}
+<div class="main-div-trip-ins">
+<h1>Stay Duration in Goa</h1>
+<p>{{data.duration}}<span style="color:#F00">(11-17,Mar,2020)</span></p>
+</div>
+{% endfor %}
+{% for data in object %}
+<div class="main-div-trip-ins main-div-trip-inss">
+<h1>Mode of Transport
+</h1>
+<p>{{ data.mode_of_transport }}</p>
+</div>
+{% endfor %}
+<div class="main-div-bottom-trip">
+<h1>Trip Type: Group Trip
+</h1>
+<p>This trip best for college students, Solo travelers, group of friend circle, travellers from corporates, couples. Age limit 18-30 yrs old only.</p>
+</div>
+</div>
+
+<div class="itinerary-main-div">
+
+  <h1>Itinerary</h1>
+  
+  <div class="tab_wrapper second_tab">
+              <ul class="tab_list">
+                  <li class="active">Day 1 : Departure for Goa</li>
+          <li>Day 2 : Arrival to Goa</li>
+          <li>Day 3 : Goa Sightseeing</li>
+          <li>Day 4 : Holi Celebration & Party</li>
+          <li>Day 5 : Explore Goa</li>
+          <li>Day 6 : Last day in Goa</li>
+  
+              </ul>
+  
+              <div class="content_wrapper">
+                  <div class="tab_content active">
+                      <div class="trip-detail-main-acc">
+                      <h1>18 Mar, 2019: Departure for Goa</h1>
+                      <p>&raquo;&nbsp;&nbsp;Gather & report at Hazrat Nizamuddin railway station, Delhi (as per the train timming) & meet the trip manager. Board the train & start the journey to Goa.</p>
+                      <p>&raquo;&nbsp;&nbsp;Here is the train routes and you may join us from your home towm also from respective railway station
+  </p>
+  <div class="table-main-div-con">
+  
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">CITY</th>
+        <th scope="col">STATION</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr class="tale-color">
+        <td data-label="CITY">Chandigarh</td>
+        <td data-label="STATION">Chandigarh Railway Station</td>
+      </tr>
+      <tr>
+        <td data-label="CITY">Delhi</td>
+        <td data-label="STATION">Hazrat Nizamuddin Railway Station</td>
+      </tr>
+      <tr class="tale-color">
+        <td data-label="CITY">Surat</td>
+        <td data-label="STATION">Surat Railway station</td>
+      </tr>
+      <tr>
+        <td data-label="CITY">Vadodara</td>
+        <td data-label="STATION">Vadodara Railway station</td>
+      </tr>
+      <tr class="tale-color">
+        <td data-label="CITY">Mumbai</td>
+        <td data-label="STATION">Panvel Railway station</td>
+      </tr>
+      <tr>
+        <td data-label="CITY">Ex-Goa</td>
+        <td data-label="STATION">Reach Goa directly by yourself by on Day 2</td>
+      </tr>
+    </tbody>
+  </table><p><span style="color:#F00;">Important Note:</span> Train booking starts 120 days before the trip departure. Make sure you start planning early & comfirm for the goa trip between 120-90 day before to get the comfirm seat in train. In case, planning with flight, then book your flight for yourself and may join our group directly at Goa.
+  
+  
+  </p>
+  </div>
+                      
+                      </div>
+                  </div>
+  
+                  <div class="tab_content">
+                      <div class="trip-detail-main-acc">
+                      <h1>19 Mar, 2019: Welcome to Goa
+  </h1>
+                      <p>&raquo;&nbsp;&nbsp;Pick-up from Goa railway station & transfer to Hotel. Hotel check-in & rest for a while after long journey.
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;Have dinner at hotel and overnight stay at hotel or else free to enjoy the Goa night life. You may visit some famous Night clubs in Goa like Club cabana, Titos, Mambos etc.<br />
+  <span style="color:#FFF; background-color:#F00;">MEAL : DINNER</span>
+  </p><br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  </div>
+                  </div>
+  
+  
+                  <div class="tab_content">
+                      <div class="trip-detail-main-acc">
+                      <h1>20 Mar, 2019: Goa sightseeing</h1>
+                      <p>&raquo;&nbsp;&nbsp;Wake up, freshen up & have breakfast.
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;- After breakfast, we will explore some of the famous tourist places in Goa: Aquada Fort, Dona Paula Beach (famous Singam Shooting Point), Miramar Beach, Old Church, Enjoy the ride in cruise (chargeable & optional Rs. 300/- per head) in the evening.</p>
+                      <p>- Back to hotel by evening, have dinner & overnight stay in Hotel or you may enjoy Goa night life in clubs or beaches.
+  
+  <br /><span style="color:#FFF; background-color:#F00;">MEAL : BREAKFAST & DINNER</span>
+  </p>
+  </p>
+  <p></p><p></p><p></p><p></div>
+                  </div>
+  
+                  <div class="tab_content">
+                     <div class="trip-detail-main-acc">
+                      <h1>21 Mar, 2019: Holi Celebration & Party</h1>
+                      <p>&raquo;&nbsp;&nbsp;Wake up, freshen up & have breakfast.</p>
+                      <p>&raquo;&nbsp;&nbsp;Holi celebration & party with colors and music. After celebration, hire a scooty & explore some of the famous beach like Baga beach, Calangute beach, Candolim beach, Anjuna beach etc.</p>
+                      <p>&raquo;&nbsp;&nbsp;Back to hotel, clean yourself and take rest, if tired.</p>
+                      <p>&raquo;&nbsp;&nbsp;Have dinner and overnight stay in Goa or free to enjoy the Goa night some of the famous beach like Baga beach, Calangute beach or Arambol..</p>
+  
+  
+  <br /><span style="color:#FFF; background-color:#F00;">MEAL : BREAKFAST & DINNER</span><br />
+  <br />
+  
+  </div>
+                  </div>
+  
+                  <div class="tab_content">
+                     <div class="trip-detail-main-acc">
+                      <h1>22 Mar, 2019: Explore Goa</h1>
+                      <p>&raquo;&nbsp;&nbsp;Wake up, freshen up & have breakfast.
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;Hire a scooty & explore some of the famous beach like Ashwen beach, Morjim beach or vagator beach etc. where you may try out the sea food, enjoy the adventure water activities, mesmerizing sunset, get tan in sunset, get excites with ocean wave.
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;Have dinner and overnight stay in Goa or free to enjoy the Goa night some of the famous beach like Baga beach, Calangute beach or Arambol.
+  </p>
+                  
+  
+  
+  <br /><span style="color:#FFF; background-color:#F00;">MEAL : BREAKFAST & DINNER</span><br />
+  <br />
+  
+  </div>
+                  </div>
+  
+                  <div class="tab_content">
+                      <h3>Tab content 6</h3>
+                     <div class="trip-detail-main-acc">
+                      <h1>23 Mar, 2019: Spend your last minute of Goa</h1>
+                      <p>&raquo;&nbsp;&nbsp;Wake up, freshen and have breakfast.
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;Check-out from hotel at 11:00 AM ( keep your lugguge at hotel cloak room). Then you are free to explore the famous Goa market near Baga & Calangute beach do shopping.
+  
+  
+  
+  </p>
+                      <p>&raquo;&nbsp;&nbsp;By evening, will board train for as per the schedule. The journey from Goa to Delhi via train will takes approx 32-35 hrs.
+  
+  
+  </p>
+                  
+  
+  
+  <br /><span style="color:#FFF; background-color:#F00;">MEAL : BREAKFAST</span><br />
+  <br />
+  
+  </div>
+                  </div>
+  
+  
+              </div>
+  
+          </div>
+  
+  </div>  
+
+<div id="special-main-div">
+<h1>Inclusion & Exclusion</h1>
+<div class="inclusion-innr-div">
+<h6>TRIP INCLUSION</h6>
+<span class="inclusion-innr-div-d">✔ 4 night & 5 days stay in North Goa</span>
+<span class="inclusion-innr-div-d">✔ Both side travel by Non-Ac Sleeper class train</span>
+<span class="inclusion-innr-div-d">✔ Pick & drop from railway station</span>
+<span class="inclusion-innr-div-d">✔ 4 Buffet Breakfast and 4 Buffet Dinner (Veg & Non-Veg)</span>
+<span class="inclusion-innr-div-d">✔ Stay in 3 star hotel with large swimming pool in North Goa hotel along with In-house bar & club</span>
+<span class="inclusion-innr-div-d">✔ Stay in Ac deluxe room</span>
+<span class="inclusion-innr-div-d">✔ North & South Goa sightseeing</span>
+<span class="inclusion-innr-div-d">✔ Discount pass for Holi Celebration & Party at beach <a href="#">View Detail</a></span>
+<span class="inclusion-innr-div-d">✔ Complimentary: DJ night & private pool party at resort.</span>
+<span class="inclusion-innr-div-d">✔ Evening Cruise (optional & chargeable)</span>
+<span class="inclusion-innr-div-d" style="border-bottom:0px;">✔ Trip manager during the trip</span>
+</div>
+<div class="inclusion-innr-div inclusion-m">
+<h6>OTHERS FACILITIES</h6>
+<span class="inclusion-innr-div-d">✔ Water sport activities at discount rate</span>
+<span class="inclusion-innr-div-d">✔ Scooty/bike/jeep available near resort</span>
+<span class="inclusion-innr-div-d">✔ Late Dj party at Las Olas, Baga beach</span>
+<span class="inclusion-innr-div-d">✔ Holi Celebration & party at Baga beach</span>
+<span class="inclusion-innr-div-d">✔ Discount on entry charge for Titos club</span>
+<span class="inclusion-innr-div-d" style="border-bottom:0px;">✔ Tie with beach shacks</span>
+</div>
+<div class="inclusion-innr-div">
+<h6>TRIP EXCLUSION</h6>
+<span class="inclusion-innr-div-d">✘ Lunch during the trip</span>
+<span class="inclusion-innr-div-d">✘ Meal while travelling</span>
+<span class="inclusion-innr-div-d">✘ Any charge for water sports activities in Goa.</span>
+<span class="inclusion-innr-div-d">✘ Charges for evening cruise</span>
+<span class="inclusion-innr-div-d">✘ Entry charge to Club, event & concert.</span>
+<span class="inclusion-innr-div-d">✘ Any monastery entrance fees</span>
+<span class="inclusion-innr-div-d">✘ Rent charges for scooty/bike/car.</span>
+<span class="inclusion-innr-div-d">✘ Medical expenses (apart from first aid) and insurance of any kind.</span>
+<span class="inclusion-innr-div-d">✘ Tips, laundry, liquors, wines, mineral water, telephone charges, camera fee and items of personal nature.</span>
+<span class="inclusion-innr-div-d" style="border-bottom:0px;">✘ Any other item not mentioned in the cost includes section.</span>
+</div>
+</div>
+<div id="special-main-div">
+<h1><br />Trip Cost</h1>
+<div class="table-main-div-con">
+<table>
+  <thead>
+    <tr>
+      <th scope="col">ROOM SHARING</th>
+      <th scope="col">WITH TRAVEL</th>
+      <th scope="col">EX-GOA</th>
+	  </tr>
+  </thead>
+  <tbody>
+        {% for data in object %}
+    <tr class="tale-color">
+      <td data-label="ROOM SHARING">QUAD</td>
+      <td data-label="WITH TRAVEL">{{ data.quad_with_travel }}/-</td>
+      <td data-label="EX-GOA">{{ data.quad_wout_travel }}/-</td>
+    </tr>{% endfor %}    
+    {% for data in object %}
+    <tr>
+      <td data-label="ROOM SHARING">TRIPLE</td>
+      <td data-label="WITH TRAVEL">{{ data.triple_with_travel }}/-	</td>
+      <td data-label="EX-GOA">{{ data.triple_wout_travel }}/-</td>
+    </tr>
+    {% endfor %}
+    {% for data in object %}
+    <tr class="tale-color">
+      <td data-label="ROOM SHARING">DOUBLE</td>
+      <td data-label="WITH TRAVEL">{{ data.double_with_travel }}/-	</td>
+      <td data-label="EX-GOA">{{ data.double_wout_travel }}/-</td>
+    </tr>{% endfor %}
+  </tbody>
+</table><br />
+<p><span style="color:#F00;">Important Note:</span><br />
+&raquo; &nbsp;All cost are per person, Inclusive of all taxes.<br />
+&raquo; &nbsp;With Travel: Train fare (Non-Ac Sleeper class) is included in the package.<br />
+&raquo; &nbsp;Ex-Goa: Trip start/ends at Goa hotel.<br />
+&raquo; &nbsp;Cost is applicable, if booking is done between 120-90 days before the trip departure or till seats availability in train.<br />
+<p><span style="color:#F00;">How To Book The Trip?:</span><br />
+<strong>Step 1:</strong> Choose our Goa group trip, dates are mentioned below.<br />
+<strong>Step 2:</strong> Read the Inclusion, Itinerary and Important information about the trip & FAQ carefully. Still have any query, feel free to call/whatsapp at 70425-09956 | 011 4059-0977.<br />
+<strong>Step 3:</strong> For booking or reserving your seat, travellers need to pay INR 4000/- per head (INR 100 extra for online transaction charge) as booking amount and rest at the time of hotel check-in.<br />
+<strong>Step 4:</strong> After payment, your booking will be confirmed. Comfirmation & booking reciept will be sent to you via mail mentioning all the inclusions which you have finalised & booked.
+</p>
+</div>
+<div class="date-main-div">
+{% for data in object %}    
+<div class="date-main-div-text"><strong>Trip Date:-</strong> <br />
+{{ data.holi_event_date }}(Including travel time train)
+ <br />
+{{ data.date_for_goa_to_goa }}
+(Goa to Goa)
+</div>
+{% endfor %} 
+
+<div class="date-bu">
+  <a href="#">Book Now</a>
+</div>
+
+<div class="date-bu2">
+  <a href="#">Ask ?</a>
+</div>
+
+</div>
+<div class="itinerary-main-div">
+<h1><br />Important Information</h1>
+
+<div class="imortant-inner-div">
+<h6 class="imortant-inner-div-new">More Detail</h6>
+<h6>Accommodation</h6>
+<span class="inclusion-innr-div-d">Room will be provided as per your booking (quad/triple/twin).</span>
+<span class="inclusion-innr-div-d">All rooms will be air-contionered, spacious, neat & clean. Hotel would be under 3 star category.</span>
+<span class="inclusion-innr-div-d">Solo travellers will be paired with someone of the same gender and can choose room on triple or double sharing only.</span>
+<h6><br />
+Mode of Transport</h6>
+<span class="inclusion-innr-div-d">Trip cost includes only trainfare (Non-Ac Sleeper Class) from these cities only Chandigarh, Delhi, Surat, Vododara and Mumbai (Panvel) etc. Travellers from Bangalore, Hyderabad, Pune and from other cities may join our Goa group trip and need to opt Goa to Goa package.</span>
+<span class="inclusion-innr-div-d">Pick and drop is not included in the package who would be joining trip from Goa. Extra charge applicable for pick and drop from station/airport.</span>
+<span class="inclusion-innr-div-d">For North & South Goa sightseeing: comfortable, safe, private shuttle will be arranged by company.</span>
+<span class="inclusion-innr-div-d">For personal sightseeing & to explore Goa beach, night out, etc you have to rent a scooty/jeep/bike/car at your own expense.</span>
+<h6><br />Trip Manager</h6>
+<span class="inclusion-innr-div-d" style="border-bottom:0px;">All Tourbeat trips are accompanied by experienced and friendly trip managers. Trip manager at the destination will ensure an amazing travel experience for everyone and provide you the information about the place, things to do, info about local food & cusines & can help to arrange activities not bound by our itinerary at extra cost.
+</span>
+</div>
+<div class="imortant-inner-div2">
+<h6 class="imortant-inner-div-new">Terms & Condition</h6>
+<h6>Terms & Condition</h6>
+<span class="inclusion-innr-div-d">* All booking are subject to availability and comfirmation by advance booking amount.</span>
+<span class="inclusion-innr-div-d">* Group size may vary from time to time depending upon long weekends, festive seasons etc.</span>
+<span class="inclusion-innr-div-d">* All packages are ‘group packages’ and same services/items are available for every person in the group.</span>
+<span class="inclusion-innr-div-d">* Health and travel insurance is not included in the package.</span>
+<h6><br />Cancellation Policy</h6>
+<span class="inclusion-innr-div-d" style="border-bottom:0px;">* Prior to the departure date , booking amount is non-refundable due to the pre-booking of your hotel rooms and other necessary arrangements for the trip.
+</span>
+</div>
+</div>
+</div>
+<div id="special-main-div">
+<h1><br />
+Trip Moments</h1>
+<div class="table-main-div-con">
+<div class="main">
+				<!-- Elastislide Carousel -->
+				<ul id="carousel" class="elastislide-list">
+					<!-- <li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/1.jpg' %}" alt="image01" /></a></li> -->
+					<!-- <li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/2.jpg' %}" alt="image02" /></a></li> -->
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/3.jpg' %}" alt="image03" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/4.jpg' %}" alt="image04" /></a></li>
+					<!-- <li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/5.jpg' %}" alt="image05" /></a></li> -->
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/6.jpg' %}" alt="image06" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/7.jpg' %}" alt="image07" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/8.jpg' %}" alt="image08" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/9.jpg' %}" alt="image09" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/10.jpg' %}" alt="image10" /></a></li>
+					<li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/11.jpg' %}" alt="image011" /></a></li>
+          <li><a href="#"><img src="{% static 'img/events/holi/holi gallery/small/12.jpg' %}" alt="image012" /></a></li>
+				</ul>
+				<!-- End Elastislide Carousel -->
+
+				
+			</div>
+</div>
+</div>
+</div>
+{% include 'footer.html' %}
+<script type="text/javascript" src="{% static 'js/jquery.elastislide.js' %}"></script>
+		<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide();
+			
+    </script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="{% static 'js/menu.js' %}"></script>
+
+</body>
+</html>

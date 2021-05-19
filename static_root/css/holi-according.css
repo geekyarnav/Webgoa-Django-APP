@@ -1,0 +1,36 @@
+.faq {
+            width: 100%;
+            border: 1px solid #CCC;
+        }
+
+        .faqitem .header {
+            padding: 15px;
+            background: #009688;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+			border-bottom:1px solid #FFF;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faqitem .header h4 {
+            margin: 0;
+        }
+
+        .faqitem .header .fa.fa-minus {
+            display: none;
+        }
+
+        .faqitem.jquery-accordion-active .fa.fa-minus {
+            display: block;
+        }
+
+        .faqitem.jquery-accordion-active .fa.fa-plus {
+            display: none;
+        }
+
+        .faqitem .content {
+            padding: 15px;
+            display: none;
+        }

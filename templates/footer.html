@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title> Lifelong Memorable experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- CSS -->
+<link href='https://fonts.googleapis.com/css?family=Lato&display=swap' rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}"  />
+<link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/elastislide.css' %}" />
+<!-- Scripts -->
+</head>
+
+<body>
+<div id="container">
+<div id="top-header">
+<div class="footer-main-div">
+        <div class="footer-iner-div">
+        <div class="footer-about">
+        </div>
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+          <a href="{% url '' %}">HOME</a>
+          <a href="{% url 'grouptrips' %}">GROUP TRIPS</a>
+          <a href="{% url 'events&parties' %}">EVENTS</a>
+          <a href="#">BLOGS</a>
+          <a href="{% url 'about' %}">ABOUT US</a>
+          <a href="{% url 'contact' %}">CONTACT US</a>
+          </div>
+        
+        <div class="contact-us-main">
+        <h1>Contact Us</h1>
+        <div class="contact-us-main-em">Call/Whatsapp:-<br />
+        +91 70425-09956 | 011 4059-0977</div>
+        <div class="contact-us-main-em">E-mail:-<br />
+        allroadsleadtogoa@gmail.com
+        </div>
+        <h1>Stay Connect with us</h1>
+        <div class="social-media-icons"><a href="#"><img src="{% static 'img/facebook.png' %}" /></a></div>
+        <div class="social-media-icons"><a href="#"><img src="{% static 'img/instagram.png' %}" /></a></div>
+        <div class="social-media-icons"><a href="#"><img src="{% static 'img/pinterest.png' %}" /></a></div>
+        <div class="social-media-icons"><a href="#"><img src="{% static 'img/twitter.png' %}" /></a></div>
+        </div>
+        
+        </div>
+        
+        </div>
+        <div class="footer-main-cop">Copyright © 2019 All Roads Leads to Goa. All right reserved
+        </div>
+        </div>
+</body>
+</html>
